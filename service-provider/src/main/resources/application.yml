@@ -1,0 +1,6 @@
+server:
+  port: 8081
+
+dubbo:
+  registry:
+    address: localhost:2181
