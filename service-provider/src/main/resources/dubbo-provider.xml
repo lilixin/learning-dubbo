@@ -12,6 +12,7 @@
     <dubbo:registry id="zookeeper" protocol="zookeeper" address="${dubbo.registry.address}" />
 
     <!-- 用dubbo协议在20880 -->
+    <!-- 本机需要配置host  不配置host的话不通 mac实测        -->
     <dubbo:protocol name="dubbo" port="30001" host="dubbo-provider.lilixin.top"/>
 
     <!-- 声明需要暴露的服务接口 -->
