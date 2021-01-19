@@ -10,7 +10,7 @@
     <!-- 注册中心服务地址 -->
     <dubbo:registry id="zookeeper" protocol="zookeeper"  address="${dubbo.registry.address}" />
 
-    <!-- 引用ComputeService服务-->
+    <!-- 引用dubboService服务-->
     <!-- 本机需要配置host  不配置host的话不通 mac实测        -->
     <dubbo:reference id="dubboService" interface="top.lilixin.dubbo.DubboInterface"
                      check="false" version="1.0"  url=""  registry="zookeeper" protocol="dubbo" timeout="15000"/>
